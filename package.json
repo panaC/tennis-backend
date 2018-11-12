@@ -1,0 +1,19 @@
+{
+  "name": "tennis-backend",
+  "version": "1.0.0",
+  "description": "tennis prediction backend with flask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panaC/tennis-backend.git"
+  },
+  "author": "pleroux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panaC/tennis-backend/issues"
+  },
+  "homepage": "https://github.com/panaC/tennis-backend#readme"
+}
