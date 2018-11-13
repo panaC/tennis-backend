@@ -14,9 +14,9 @@ requests = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
 scikit-learn = "*"
-jupyter = "*"
 
 [dev-packages]
+jupyter = "*"
 
 [requires]
 python_version = "3.7"
