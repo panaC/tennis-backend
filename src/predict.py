@@ -6,7 +6,7 @@
 #    By: pleroux <pleroux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/13 14:55:47 by pleroux           #+#    #+#              #
-#    Updated: 2018/11/13 16:01:28 by pleroux          ###   ########.fr        #
+#    Updated: 2018/11/13 16:14:16 by pleroux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,6 @@ import numpy as np
 from src.url_engine import URL_ENGINE
 from flask_restful import Resource
 from flask import request
-
 
 def get_data_prediction(date, winner, looser, url_engine=URL_ENGINE):
     engine = create_engine(URL_ENGINE)
