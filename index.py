@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    index.py                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: pleroux <pleroux@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/11/13 10:40:23 by pleroux           #+#    #+#              #
+#    Updated: 2018/11/13 10:40:34 by pleroux          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
