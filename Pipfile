@@ -10,8 +10,11 @@ flask-cors = "*"
 sqlalchemy = "*"
 numpy = "*"
 pandas = "*"
-sklearn = "*"
 requests = "*"
+"psycopg2" = "*"
+"psycopg2-binary" = "*"
+scikit-learn = "*"
+jupyter = "*"
 
 [dev-packages]
 

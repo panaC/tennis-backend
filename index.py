@@ -6,7 +6,7 @@
 #    By: pleroux <pleroux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/13 10:40:23 by pleroux           #+#    #+#              #
-#    Updated: 2018/11/13 10:40:34 by pleroux          ###   ########.fr        #
+#    Updated: 2018/11/13 11:05:06 by pleroux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ import pandas as pd
 import numpy as np
 import datetime
 from urllib.parse import unquote
+import sys
 
 app = Flask(__name__)
 api = Api(app)
@@ -35,7 +36,7 @@ def get_data_prediction(date, winner, looser, url_engine=URL_ENGINE):
     with engine.connect() as conn, conn.begin():
         return pd.read_sql(req.get(URL).text.format(date=date, winner=winner, looser=looser), conn)
 
-PATH = 'models/'
+PATH = sys.argv[1] + '/' or 'models/'
 
 def load_model(name, path=PATH):
     file = open(path + name, 'rb')
